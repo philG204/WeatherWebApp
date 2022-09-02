@@ -1,0 +1,8 @@
+<div class="flex justify-center mt-5 shadow-2xl ">
+    <input class="transition ease-in-out delay-75 hover:border-none hover:bg-slate-300 hover:shadow-2xl hover:scale-105 duration-200 border-slate-100 rounded-lg border-2 shadow-md bg-slate-100 w-96 h-12 mb-5 text-2xl font-sans " [(ngModel)]="city" placeholder="City..." >
+    <button class="transition ease-out delay-75 hover:bg-sky-700 hover:scale-110 duration-500 bg-sky-500 drop-shadow-2xl ml-5 rounded-full mb-5 w-20" (click)="SearchForCity()">Search</button>
+</div>
+
+<div class="flex justify-center ">
+    <ng-container #container></ng-container>
+</div>

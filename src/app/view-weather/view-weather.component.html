@@ -1,0 +1,28 @@
+<div class="flex justify-center border-2 rounded-3xl border-slate-600 bg-slate-600 shadow-2xl shadow-sky-400 h-48 w-fit mt-5">
+    <div class="flex justify-start font-bold">
+        <img src={{weatherData?.current?.condition?.icon}}>
+        <div class="flex flex-col">
+            <div class="flex flex-col text-2xl bg-sky-400 shadow-sky-400 rounded-lg shadow-md h-24 mt-2 mr-2 w-48">
+                <p class="ml-5">{{weatherData?.current?.condition?.text}}</p>
+                <h1 class="mt-5 ml-16 mb-10">{{weatherData?.current?.temp_c}} °C</h1>  
+            </div>
+            <div class="flex justify-center mt-7 mr-2 bg-sky-400 shadow-sky-400 rounded-lg shadow-md">
+                <h1 class="mr-5">{{weatherData?.current?.wind_degree}}°</h1>
+                <h1>{{weatherData?.current?.wind_dir}}</h1>
+                <h1 class="ml-5">{{weatherData?.current?.wind_kph}} km/h</h1>
+            </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="flex flex-col bg-sky-400 shadow-sky-400 rounded-lg w-14 ml-10 shadow-md mt-5">
+                <p class="ml-3">{{weatherData?.current?.humidity}} %</p>
+                <p class="ml-2">{{weatherData?.current?.pressure_mb}}</p>
+                <p class="ml-2">{{weatherData?.current?.uv}}</p>
+            </div>
+            <div class="flex flex-col mt-6 bg-sky-400 shadow-sky-400 rounded-lg shadow-md ml-2 mr-2">
+                <h1 class="ml-5 font-bold text-2xl">{{weatherData?.location?.country}}</h1>
+                <p>{{weatherData?.location?.localtime}}</p>
+            </div>           
+        </div>                     
+    </div>   
+</div>
+
