@@ -1,6 +1,7 @@
 # WeatherWebApp
 
 This is a simple frond end only web app, that calls a weather data api 
+and it includes tailwind
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
